@@ -37,6 +37,7 @@ find "$WORK/editable/res" -type f -name "*.xml" -exec sed -E -i 's#(<item type="
 # Android XML manifest rather than plain text.
 "$APKTOOL_BIN" b -f "$WORK/editable" -o "$WORK/editable.apk"
 unzip -p "$WORK/editable.apk" AndroidManifest.xml > "$SRC/AndroidManifest.xml"
+unzip -p "$WORK/editable.apk" resources.arsc > "$SRC/resources.arsc"
 rm -rf "$SRC/res"
 cp -a "$WORK/editable/res" "$SRC/res"
 

@@ -1,0 +1,27 @@
+# Local APK inputs and build outputs
+*.apk
+*.aab
+dist/
+apktool-src/
+decompiled/
+decompiled-no-res/
+
+# Local/tool logs and temporary files
+*.log
+/tmp/
+
+# Signing material and credentials
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+privatekey*
+*private-key*
+
+# IDE/build metadata
+.gradle/
+build/
+.idea/
+*.iml
+.DS_Store
